@@ -1,0 +1,104 @@
+  
+$font:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        .aboutPage{
+            padding: 50px 0px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .aboutLeft{
+                order: 1;
+                width:35%;
+                margin: 0 auto;
+        
+                img{
+                  width: 100%;
+                  border-radius: 50%;
+                }
+                h2{
+                    text-align: center;
+                    padding: 20px 0;
+                    color: rgb(89, 89, 192);
+                }
+            }
+            .aboutRight{
+                order: 2;
+                width: 60%;
+                margin: 0 auto;
+                line-height: 1.8;
+                h2{
+                    text-align: center;
+                    color:rgb(126, 71, 177);
+                    font-size: 35px;
+                    // font-family: Arial, Helvetica, sans-serif;
+                    ::before{
+                        content:"";
+                        position: absolute;
+                        bottom: 20px;
+                        height: 3px;
+                        background-color: red;
+                        width: 4000px;
+                    }
+                }
+                .beautifulHr{
+                    border: none;
+                    width: 100px;
+                    height: 3px;
+                    background-color:rgb(114, 62, 163);;
+                    margin: 1px auto;
+                    
+                }
+                p{
+                    margin: 0 auto;
+                    width: 80%;
+                    text-align: justify;
+                    // line-height: 1.7;
+                    font-family: $font;
+                    font-size: 20px;
+                }
+               
+                
+                
+            }
+        }
+    }
+    @media(max-width: 874px){
+        .container{
+            .aboutPage{
+                display: flex;
+                flex-direction: column-reverse;
+                .aboutLeft{
+                    order: 2;
+                    width: 70%;                   
+                    h2{
+                        font-size: 20px;
+                        width: 100%;
+                    }
+                }
+                .aboutRight{
+                    width: 100%;
+                    order: 1;
+                    line-height: 1.4;
+                    
+                    h2{
+                        font-size: 20px;
+                        margin: 0;
+                        
+                        display: block;
+                        width: 100%;
+                    }
+                    .beautifulHr{
+                        width: 70px;
+                    }
+                    p{
+                        width: 90%;
+                        text-align: justify;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+    }
